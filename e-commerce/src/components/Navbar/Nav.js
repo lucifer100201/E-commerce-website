@@ -1,6 +1,8 @@
 import React from 'react'
 import './navbar.css';
 import { Link } from 'react-router-dom';
+
+
 const Navbar = () => {
   return (
     <>
@@ -10,14 +12,15 @@ const Navbar = () => {
         </div>
         <div className='navbar-rightfields'>
           <div className='cart-logo'>
-          <Link><i class="fa-solid fa-cart-plus"></i></Link>
+            <Link to="./"><i class="fa-solid fa-cart-plus"></i></Link>
           </div>
           <div className='cart-count'>
             <h1>0</h1>
           </div>
         </div>
-        
+
       </nav>
+      
 
     </>
   )
